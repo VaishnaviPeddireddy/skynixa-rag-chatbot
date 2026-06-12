@@ -1,0 +1,78 @@
+SKYNIXA COMPANY OVERVIEW
+Last Updated: January 2025
+
+ABOUT SKYNIXA
+SkyNixa is a cloud software company that builds tools for modern teams — project management,
+internal communications, and employee experience platforms. Founded in 2018, we serve mid-size
+and enterprise customers across North America and Europe. Our mission is to help organizations
+work smarter together.
+
+COMPANY VALUES
+- Transparency and trust
+- Customer-first product design
+- Inclusion and continuous learning
+- Sustainable, flexible work
+
+ORGANIZATION & TEAMS
+SkyNixa is organized into the following departments:
+
+1. Engineering — builds and maintains SkyNixa products (Platform, Mobile, DevOps)
+2. Product — product management, UX research, and design
+3. Sales & Customer Success — new business, account management, and support
+4. Marketing — brand, content, demand generation, and events
+5. People Operations (HR) — hiring, onboarding, benefits, and employee relations
+6. Finance & Legal — accounting, payroll, contracts, and compliance
+7. IT & Security — internal systems, help desk, and information security
+
+New employees are assigned to a team within one of these departments on Day 1.
+Your manager and onboarding buddy will introduce you to your immediate team.
+
+OFFICE LOCATIONS & WORKING HOURS
+Headquarters: 1200 Innovation Drive, Austin, TX 78701
+Regional offices:
+- San Francisco, CA — 500 Market Street, Suite 200
+- New York, NY — 200 Park Avenue, Floor 15
+- London, UK — 10 Finsbury Square (EMEA hub)
+
+Standard office hours: Monday–Friday, 9:00 AM to 5:00 PM local time.
+Flexible start times between 8:00 AM and 10:00 AM are available with manager approval.
+Remote and hybrid arrangements are supported — see remote-work-policy.md for details.
+
+IT SUPPORT — FIRST DAY
+On your first day, IT will help you set up:
+- Company laptop and accessories
+- Email (name@skynixa.com)
+- Slack, HR portal, and learning platform accounts
+
+For IT help at any time:
+- Email: it-help@skynixa.com
+- Slack: #it-helpdesk
+- Phone: ext. 200 (internal)
+- Walk-in: IT Support Desk, HQ Building A, 2nd floor (Mon–Fri 8 AM–6 PM)
+
+New hires: report to the Day 1 orientation room at 9:00 AM or join the virtual Zoom link
+sent by onboarding@skynixa.com. An IT specialist will be on-site during orientation.
+
+REQUESTING TIME OFF (NEW EMPLOYEES)
+All employees, including new hires, accrue PTO from their start date.
+- New employees receive 15 PTO days per year, accrued monthly.
+- Submit requests through the HR portal at least 2 weeks in advance.
+- Your manager approves PTO requests.
+- Questions: hr@skynixa.com or HR Help Desk ext. 100
+
+See hr-policy.txt for full PTO, sick leave, and parental leave details.
+
+KEY CONTACTS (QUICK REFERENCE)
+- General HR: hr@skynixa.com | ext. 100
+- IT Help Desk: it-help@skynixa.com | ext. 200
+- Onboarding: onboarding@skynixa.com
+- New hires Slack: #new-hires
+- Company all-hands: First Thursday of each month, 11:00 AM CT (company-wide Zoom)
+
+COMPANY EVENTS
+- Monthly all-hands meeting — first Thursday, 11:00 AM CT
+- Quarterly team off-sites — announced by department leads
+- Annual SkyNixa Summit — every September (location rotates)
+
+For more detail on benefits, see benefits-overview.txt.
+For onboarding steps, see onboarding-guide.txt.

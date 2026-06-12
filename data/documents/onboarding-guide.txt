@@ -1,0 +1,39 @@
+SKYNIXA NEW EMPLOYEE ONBOARDING GUIDE
+Welcome to SkyNixa!
+
+DAY 1 — ORIENTATION
+- Arrive at 9:00 AM at the main office reception (or join the virtual orientation Zoom link)
+- Meet your onboarding buddy assigned by HR
+- Complete I-9 and tax paperwork with HR
+- Receive company laptop, badge, and welcome kit
+- Attend the "Welcome to SkyNixa" session (company history, values, org structure)
+- Set up email, Slack, and HR portal accounts with IT support
+
+WEEK 1 — GETTING STARTED
+- Complete mandatory compliance training in the learning portal (due by Day 5)
+- Meet with your direct manager for role expectations and 30-60-90 day plan
+- Schedule 1:1 introductions with key team members
+- Review department-specific documentation in the internal wiki
+- Enroll in benefits during your first 30 days (see benefits-overview.txt)
+
+WEEK 2-4 — RAMP UP
+- Attend team standups and department meetings
+- Complete role-specific technical onboarding modules
+- Submit your first weekly status update to your manager
+- Join relevant Slack channels (#general, #your-team, #random)
+- Schedule a 30-day check-in with HR
+
+REQUIRED TRAINING (First 30 Days)
+1. Security Awareness Training
+2. Anti-Harassment & DEI Training
+3. Data Privacy & GDPR Basics
+4. Code of Conduct Acknowledgment
+
+KEY CONTACTS
+- HR: hr@skynixa.com
+- IT Help Desk: it-help@skynixa.com (ext. 200)
+- Your Manager: listed in the HR portal
+- Onboarding Buddy: assigned on Day 1
+
+QUESTIONS?
+Visit the #new-hires Slack channel or email onboarding@skynixa.com
