@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Prediction</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="{% static 'home/js/canvasjs.min.js' %}"></script>
+    <script src="{% static 'home/js/ap.js' %}"></script>
+    <link  href="{% static 'home/cs/custom.css' %}" rel="stylesheet"></link>
+
+</head>
+<!-- <body style="background-image: url('{% static 'home/image/bgimage.jpg' %}')"> -->
+<body>
+<section id="titlebar">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Employing the SMOTE technique, a machine learning model for predicting student grades</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active" id="home" onclick="home()"><a href="#">Home</a></li>
+                <li id="grade" onclick="grade()"><a href="#">Grade Prediction</a></li>
+            </ul>
+        </div>
+    </nav>
+</section>
+<section id="body">
+    <section id="header_img" class="container" >
+<!--        <img src="{% static 'home/image/student_predict.jpg' %}">-->
+        
+            <h1>
+                Final Year Project
+            </h1>
+            <h2>
+                BATCH - B05
+            </h2>
+        
+    </section>
+
+    <section id="bottom" class="container">
+        <div id="description" class="col-s-12">
+            <p>
+                <big>Today</big>, predictive analytics applications became an urgent desire in higher educational institutions. Predictive analytics used advanced analytics that encompasses machine learning implementation
+                to derive high-quality performance and meaningful information for all education levels.. Mostly know that
+                student grade is one of the key performance indicators that can help educators monitor their academic performance. During the past decade, researchers have proposed many variants of machine learning techniques
+                in education domains. However, there are severe challenges in handling imbalanced datasets for enhancing
+                the performance of predicting student grades
+            </p>
+        </div>
+    </section>
+</section>
+<!-- <section id="footer">
+    <p style="padding: 5px;">Terms & Conditions</p>
+</section> -->
+</body>
+</html>

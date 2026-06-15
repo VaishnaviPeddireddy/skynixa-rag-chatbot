@@ -1,0 +1,365 @@
+<section id="grades" class="container">
+<form class="form-horizontal" action="/grade-predict/" id="myform" method="POST">
+  {% csrf_token %}
+  <div class="col-xs-6">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="school">School:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="school" id="school">
+        <option value="GP">Gabriel Pereira</option>
+        <option value="MS">Mousinho da Silveira</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="sex">Sex:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="sex" id="sex">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" hidden>
+    <label class="control-label col-sm-2" for="age">Age:</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" name="age" id="age" value="20">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="address">Region:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="address" id="address">
+        <option value="U">Urban</option>
+        <option value="R">Rural</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="famsize">Family Size:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="famsize" id="famsize">
+        <option value="LE3">Less Than 3</option>
+        <option value="GT3">More Than 3</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Pstatus"> Parent's cohabitation status:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="Pstatus" id="Pstatus">
+        <option value="T">Together</option>
+        <option value="A">Apart</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Medu"> Mother's education:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="Medu" id="Medu">
+        <option value="0">None</option>
+        <option value="1">Primary education</option>
+        <option value="2">5th to 9th grade</option>
+        <option value="3">secondary education</option>
+        <option value="4">Higher education</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Fedu"> Father's education:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="Fedu" id="Fedu">
+        <option value="0">None</option>
+        <option value="1">Primary education</option>
+        <option value="2">5th to 9th grade</option>
+        <option value="3">secondary education</option>
+        <option value="4">Higher education</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Mjob"> Mother's Job:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="Mjob" id="Mjob">
+        <option value="teacher">teacher</option>
+        <option value="health">health</option>
+        <option value="services">civil services eg: administrative or police</option>
+        <option value="at_home">at_home</option>
+        <option value="other">others</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Fjob"> Father's Job:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="Fjob" id="Fjob">
+        <option value="teacher">teacher</option>
+        <option value="health">health</option>
+        <option value="services">civil services eg: administrative or police</option>
+        <option value="at_home">at_home</option>
+        <option value="other">others</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" hidden>
+    <label class="control-label col-sm-2" for="reason">Reason:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="reason" id="reason">
+        <option value="home">Close to home</option>
+        <option value="reputation">School reputation</option>
+        <option value="course">course' preference</option>
+        <option value="other">other</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" hidden>
+    <label class="control-label col-sm-2" for="guardian">Guardian:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="guardian" id="guardian">
+        <option value="mother">Mother</option>
+        <option value="father">Father</option>
+        <option value="other">other</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="traveltime">Traveltime:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="traveltime" id="traveltime">
+        <option value="1"><15 min</option>
+        <option value="2">15 to 30 min</option>
+        <option value="3">30 min. to 1 hour</option>
+        <option value="4">1 hour</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="failures ">failures :</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="failures" id="failures ">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+  </div>
+  </div>
+  <div class="col-xs-6">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="schoolsup">Extra_Edu Support</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="schoolsup" id="schoolsup">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="famsup">Family_Supp:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="famsup" id="famsup">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" hidden>
+    <label class="control-label col-sm-2" for="paid">paid :</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="paid" id="paid">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="activities">Activities:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="activities" id="activities">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" hidden>
+    <label class="control-label col-sm-2" for="nursery">nursery:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="nursery" id="nursery">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" hidden>
+    <label class="control-label col-sm-2" for="higher">higher:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="higher" id="higher">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="internet">Internet:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="internet" id="internet">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="romantic">Behavior</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="romantic" id="romantic">
+        <option value="yes">Good</option>
+        <option value="no">Bad</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" hidden>
+    <label class="control-label col-sm-2" for="famrel">Fam_rel:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="famrel" id="famrel">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="freetime">Freetime:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="freetime" id="freetime">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="goout">Hang_out:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="goout" id="goout">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" hidden>
+    <label class="control-label col-sm-2" for="Dalc">Dalc:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="Dalc" id="Dalc">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" hidden>
+    <label class="control-label col-sm-2" for="Walc">Walc:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="Walc" id="Walc">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="health">Health_Stat:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="health" id="health">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="absences">Absences:</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" name="absences" id="absences" max="93" required value="0">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="studytime ">Studytime:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="studytime" id="studytime ">
+        <option value="1"><2 hours</option>
+        <option value="2">2 to 5 hours</option>
+        <option value="3">5 to 10 hours</option>
+        <option value="4">>10 hours</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="G1">G1:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="G1" id="G1">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+      </select>
+    </div>
+  </div>
+  
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="G2">G2:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="G2" id="G2">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="algo">Machine Learning algorithm:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="algo" id="algo">
+        <option value="DT">Decision Tree</option>
+        <option value="NB">Random Forest</option>
+        <option value="RF_SM_FS">KNN</option>
+      </select>
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-12 text-center">
+      <button onclick="submitbtn()" id="btnSubmit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+</section>
+<div id="myModal" class="modal" ">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="close1()">&times;</span>
+      <h2>Predictions: </h2>
+    </div>
+    <div class="modal-body">
+      <h4 id="result">Some text in the Modal Body</h4>
+    </div>
+  </div>
+</div>
